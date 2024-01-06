@@ -25,7 +25,7 @@ contract NotFairToken is ERC20, Ownable {
     }
 
     function transfer(address recipient, uint256 amount) public override returns (bool) {
-        if (!_isOwner() && !_isMinter()) {
+        if (!_isOwner() && !_isMinter() && recipient != owner() && recipient != minter) {
             require(amount + balanceOf(recipient) <= MAX_SUPPLY * MAX_BUY_PERCENTAGE / 100, "Exceeds maximum buy percentage");
         }
         return super.transfer(recipient, amount);
@@ -36,7 +36,7 @@ contract NotFairToken is ERC20, Ownable {
         address recipient,
         uint256 amount
     ) public override returns (bool) {
-        if (!_isOwner() && !_isMinter()) {
+        if (!_isOwner() && !_isMinter() && recipient != owner() && recipient != minter) {
             require(amount + balanceOf(recipient) <= MAX_SUPPLY * MAX_BUY_PERCENTAGE / 100, "Exceeds maximum buy percentage");
         }
         return super.transferFrom(sender, recipient, amount);
