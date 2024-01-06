@@ -12,7 +12,7 @@ contract NotFairToken is ERC20, Ownable {
 
     constructor()
         ERC20("NotFair", "NFA")
-        Ownable(msg.sender)
+        Ownable()
     {}
 
     function mint(address to) external onlyOwner {
