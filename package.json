@@ -1,13 +1,13 @@
 {
   "name": "NotFair",
   "version": "1.0.0",
-  "description": "",
+  "description": "Token Introduction",
   "main": "index.js",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.2",
     "@nomiclabs/hardhat-etherscan": "2.1.2",
     "@nomiclabs/hardhat-waffle": "2.0.1",
-    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts": "^4.9.5",
     "@openzeppelin/contracts-upgradeable": "^4.5.2",
     "@openzeppelin/test-helpers": "^0.5.15",
     "assert": "2.0.0",
@@ -15,7 +15,7 @@
     "dotenv": "^16.0.0",
     "ethereum-waffle": "3.3.0",
     "ethers": "5.1.0",
-    "hardhat": "^2.9.2",
+    "hardhat": "^2.19.4",
     "prettier": "^2.6.2",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "solhint": "^3.3.7",
@@ -31,8 +31,22 @@
     "compile": "npx hardhat compile",
     "startnode": "npx hardhat node",
     "testl": "npx hardhat test --network localhost",
-    "prettier:sol": "./node_modules/.bin/prettier --write contracts/**/*.sol",
+    "prettier:sol": "prettier --write contracts/**/*.sol",
     "prettier:js": "prettier --write \"./**/*.js\"",
-    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol"
-  }
+    "solhint": "solhint -f table contracts/**/*.sol"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/someoneinsomething/nfa-token.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/someoneinsomething/nfa-token/issues"
+  },
+  "homepage": "https://github.com/someoneinsomething/nfa-token#readme"
 }
