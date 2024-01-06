@@ -1,15 +1,3 @@
-# NFA TOKEN
-
-
-NotFair is not merely a project but an experiment within the zkFair ecosystem. There are no VC institutions or team shares involved; all tokens will be distributed equitably and allocated to the community, marking just the initial phase. The creators of the NotFair token constitute a group of individuals passionate about ZKFAIR who aspire to collaborate with the community in developing a solid ecosystem using Web3 technologies."
-
-“How to start
-
-As previously mentioned, the initial phase of the NotFair protocol involves the equitable and decentralized distribution of $NFA to community members.
-
-An important reminder: the maximum amount of tokens per wallet is limited to 1% of the total supply
-
-
 # Tokenomics
 
 Token Introduction
